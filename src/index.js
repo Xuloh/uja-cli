@@ -165,7 +165,7 @@ function rawOutput(argv, result) {
 
 const yargs = require("yargs/yargs");
 const argv = yargs(hideBin(process.argv))
-    .usage("Usage : $0 <command> <query>")
+    .usage("Usage : $0 [options] <command> <query>")
     .epilog(
 `
 This is an unofficial CLI wrapper for the unofficial Jisho API package.
@@ -238,6 +238,7 @@ I am ${colors.bold.underline("NOT")} affiliated with any of those projects.
     .alias("V", "version")
     .strict()
     .showHelpOnFail(false, "Use --help for available options")
+    .version("0.1.0")
     .argv;
 
 if(argv.verbose) {
