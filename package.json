@@ -4,7 +4,8 @@
   "description": "CLI wrapper for the unofficial jisho api package",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --mode production --progress",
+    "postbuild": "chmod +x build/uja"
   },
   "author": "Xuloh",
   "license": "MIT",
