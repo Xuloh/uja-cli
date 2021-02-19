@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node src/index.js",
     "build": "webpack --mode production --progress",
-    "postbuild": "chmod +x build/uja",
+    "postbuild": "mv build/uja.js build/uja && chmod +x build/uja",
     "prebuild-exe": "npm run build",
     "build-exe": "pkg build/uja --targets latest-linux-x64,latest-win-x64 --out-path build"
   },
