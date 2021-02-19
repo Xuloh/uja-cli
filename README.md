@@ -4,6 +4,11 @@ This is an unofficial CLI wrapper for the [unofficial Jisho API package](https:/
 You can find out more about those projects at https://jisho.org/about and https://github.com/mistval/unofficial-jisho-api#readme.
 I am **NOT** affiliated with any of those projects.
 
+## Download
+
+You can download pre built versions of the program in the [release section](https://github.com/Xuloh/uja-cli/releases/).
+Just download them wherever in your `PATH` and you're good to go.
+
 ## Usage
 
 - Basic usage :
