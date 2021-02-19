@@ -2,7 +2,7 @@
   "name": "uja-cli",
   "version": "0.1.0",
   "description": "CLI wrapper for the unofficial jisho api package",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

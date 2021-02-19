@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 const colors = require("ansi-colors");
 colors.enabled = require("color-support").hasBasic;
 
@@ -165,7 +163,8 @@ function rawOutput(argv, result) {
     console.log(JSON.stringify(result, null, argv.pretty))
 }
 
-const yargs = require("yargs/yargs")(hideBin(process.argv))
+const yargs = require("yargs/yargs");
+const argv = yargs(hideBin(process.argv))
     .usage("Usage : $0 <command> <query>")
     .epilog(
 `
@@ -238,8 +237,9 @@ I am ${colors.bold.underline("NOT")} affiliated with any of those projects.
     .alias("h", "help")
     .alias("V", "version")
     .strict()
-    .showHelpOnFail(false, "Use --help for available options");
+    .showHelpOnFail(false, "Use --help for available options")
+    .argv;
 
-if(yargs.argv.verbose) {
-    console.log("argv :", yargs.argv);
+if(argv.verbose) {
+    console.log("argv :", argv);
 }
