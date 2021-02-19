@@ -8,7 +8,7 @@ I am **NOT** affiliated with any of those projects.
 
 - Basic usage :
 ```bash
-uja [options] <command> <query>`
+uja [options] <command> <query>
 ```
 
 - Commands :
