@@ -68,7 +68,7 @@ npm run build-exe
 ```
 Please note that the resulting executable will be rather large (71 MB on my computer as of writing this) since its basically bundling the Node.js runtime and the script together in the same file.
 
-## About
+## About
 
 This program just passes input to and displays results from the [unofficial Jisho API](https://github.com/mistval/unofficial-jisho-api).
 You should probably read their documentation to make better use of this program.
